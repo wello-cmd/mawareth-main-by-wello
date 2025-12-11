@@ -1,0 +1,3 @@
+Listing Gemini Models...
+Standard models failed. This likely means the API Key is invalid or the 'Generative Language API' is not enabled in Google Cloud Console.
+Error details: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent: [404 Not Found] models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
