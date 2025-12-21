@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Bank-Grade Palette - Royal Emerald + Paper White */
+    --background: 40 20% 98%;
+    --foreground: 160 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 15%;
+
+    /* Royal Emerald - Primary (#064E3B) */
+    --primary: 160 85% 16%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 15% 94%;
+    --secondary-foreground: 160 30% 15%;
+
+    --muted: 40 15% 94%;
+    --muted-foreground: 160 15% 45%;
+
+    /* Muted Gold - Accent (CTAs only) (#D4AF37) */
+    --accent: 43 65% 52%;
+    --accent-foreground: 160 85% 16%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 160 85% 16%;
+
+    --radius: 0.5rem;
+
+    /* Custom semantic colors */
+    --emerald: 160 85% 16%;
+    --emerald-dark: 160 85% 10%;
+    --emerald-foreground: 0 0% 100%;
+    --gold: 43 65% 52%;
+    --trust-blue: 210 70% 45%;
+    --success-green: 142 70% 36%;
+
+    /* Bank-grade shadows */
+    --shadow-soft: 0 1px 3px hsl(160 30% 15% / 0.08);
+    --shadow-medium: 0 4px 12px hsl(160 30% 15% / 0.12);
+    --shadow-strong: 0 8px 24px hsl(160 30% 15% / 0.16);
+
+    --chart-1: 158 64% 51%;
+    --chart-2: 141 69% 58%;
+    --chart-3: 172 66% 50%;
+    --chart-4: 82 77% 55%;
+    --chart-5: 0 0% 45%;
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 160 30% 15%;
+    --sidebar-primary: 160 85% 16%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 15% 94%;
+    --sidebar-accent-foreground: 160 30% 15%;
+    --sidebar-border: 40 15% 88%;
+    --sidebar-ring: 160 85% 16%;
+  }
+
+  .dark {
+    --background: 160 30% 6%;
+    --foreground: 40 20% 98%;
+
+    --card: 160 25% 10%;
+    --card-foreground: 40 20% 98%;
+
+    --popover: 160 25% 10%;
+    --popover-foreground: 40 20% 98%;
+
+    --primary: 160 70% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 20% 15%;
+    --secondary-foreground: 40 20% 98%;
+
+    --muted: 160 20% 15%;
+    --muted-foreground: 160 15% 60%;
+
+    --accent: 43 65% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 20% 18%;
+    --input: 160 20% 18%;
+    --ring: 160 70% 35%;
+
+    --emerald: 160 70% 35%;
+    --emerald-dark: 160 70% 20%;
+    --emerald-foreground: 0 0% 100%;
+
+    --chart-1: 156 71% 66%;
+    --chart-2: 141 76% 73%;
+    --chart-3: 170 76% 64%;
+    --chart-4: 81 84% 67%;
+    --chart-5: 0 0% 45%;
+    --sidebar: 160 25% 10%;
+    --sidebar-foreground: 40 20% 98%;
+    --sidebar-primary: 160 70% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 20% 15%;
+    --sidebar-accent-foreground: 40 20% 98%;
+    --sidebar-border: 160 20% 18%;
+    --sidebar-ring: 160 70% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Cairo', sans-serif;
+  }
+
+  [dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+@layer utilities {
+  .font-cairo {
+    font-family: 'Cairo', sans-serif;
+  }
+}

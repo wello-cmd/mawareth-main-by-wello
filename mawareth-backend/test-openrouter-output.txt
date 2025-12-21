@@ -1,0 +1,9 @@
+Testing OpenRouter API connection...
+API Key found (starts with: sk-or...)
+Sending prompt: "Briefly say 'Hello from Merath AI via OpenRouter' in English. Do not include math."
+
+✅ AI Response received:
+-----------------------------------
+Hello from Merath AI via OpenRouter!
+-----------------------------------
+OpenRouter integration is WORKING.
